@@ -85,6 +85,26 @@ body {
     .heading {
       padding: 25px 0;
       text-align: center;
+      .month-navigation {
+        position: relative;
+        top:-20px;
+        a {
+          padding: 5px;
+          line-height: 1;
+          position: absolute;
+          display: block;
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .prev-month {
+        left:-5px;
+        top:0;
+      }
+      .next-month {
+        right:-5px;
+        top:0;
+      }
       h3 {
         margin: 0;
       }

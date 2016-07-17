@@ -11,7 +11,9 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./node_modules/fontawesome/index.js">
         <link rel="stylesheet" href="./app.css">
+        <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.min.css">
     </head>
     <body>
         <div class="container calendar" style="width: 100%; padding: 0">
@@ -19,8 +21,14 @@
                 <div class="col-md-3 sidebar">
                     <div class="heading">
                         <h3>Juni</h3>
-                        <div class="left-caret"></div>
-                        <div class="right-caret"></div>
+                        <div class="month-navigation">
+                            <a class="prev-month">
+                                <i class="fa fa-caret-left"></i>
+                            </a>
+                            <a class="next-month">
+                                <i class="fa fa-caret-right"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="calendar-box">

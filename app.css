@@ -195,6 +195,22 @@ body {
   .calendar .sidebar .heading {
     padding: 25px 0;
     text-align: center; }
+    .calendar .sidebar .heading .month-navigation {
+      position: relative;
+      top: -20px; }
+      .calendar .sidebar .heading .month-navigation a {
+        padding: 5px;
+        line-height: 1;
+        position: absolute;
+        display: block;
+        width: 25px;
+        height: 25px; }
+    .calendar .sidebar .heading .prev-month {
+      left: -5px;
+      top: 0; }
+    .calendar .sidebar .heading .next-month {
+      right: -5px;
+      top: 0; }
     .calendar .sidebar .heading h3 {
       margin: 0; }
   .calendar .sidebar .calendar-box {
