@@ -170,7 +170,8 @@
   border: 1px solid #e74c3c; }
 
 body {
-  font-family: "Brandon Text", sans-serif; }
+  font-family: "Brandon Text", sans-serif;
+  color: #444; }
 
 .sidebar {
   background: rgba(15, 35, 46, 0.85);
@@ -180,13 +181,17 @@ body {
 .content {
   height: 1000px; }
 
+a {
+  color: #444; }
+  a:hover {
+    cursor: pointer; }
+
 .calendar > .row {
   margin-left: 0;
   margin-right: 0; }
 .calendar .sidebar {
   color: #F4F6F8;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-  width: 335px; }
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); }
   .calendar .sidebar a {
     color: #F4F6F8; }
     .calendar .sidebar a:hover {
@@ -263,4 +268,71 @@ body {
       .calendar .sidebar .clients .active-indicator.inactive {
         background: none; }
 .calendar .content {
-  background: #EDEFF1; }
+  background: #EDEFF1;
+  padding: 0; }
+  .calendar .content .content-header {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    background: #fff;
+    margin-right: 0;
+    margin-left: 0; }
+    .calendar .content .content-header .period {
+      text-align: center; }
+      .calendar .content .content-header .period h3 {
+        padding: 25px 0;
+        margin: 0; }
+      .calendar .content .content-header .period .controls {
+        position: relative;
+        top: -45px; }
+        .calendar .content .content-header .period .controls a {
+          padding: 5px;
+          line-height: 1;
+          position: absolute;
+          display: block;
+          width: 25px;
+          height: 25px;
+          top: 0;
+          color: #444; }
+        .calendar .content .content-header .period .controls .next-period {
+          right: 0; }
+        .calendar .content .content-header .period .controls .prev-period {
+          left: 0; }
+    .calendar .content .content-header .header-col {
+      height: 85px; }
+      .calendar .content .content-header .header-col:last-child {
+        border-right: none; }
+    .calendar .content .content-header .view-options-header-col {
+      border-right: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      padding: 25px 15px;
+      width: 70%; }
+    .calendar .content .content-header .search-header-col {
+      width: 5%; }
+    .calendar .content .content-header .view-options .form-control {
+      margin-left: 10px; }
+    .calendar .content .content-header .view-options .form-group {
+      margin-bottom: 0; }
+    .calendar .content .content-header .search-button {
+      display: block;
+      font-size: 16px;
+      padding-top: 32px;
+      text-align: center; }
+      .calendar .content .content-header .search-button:hover {
+        cursor: pointer; }
+  .calendar .content .days {
+    height: 1000px; }
+    .calendar .content .days .day {
+      background: #FBFCFC;
+      /* Old browsers */
+      -webkit-transition: background 200ms;
+      -moz-transition: background 200ms;
+      -ms-transition: background 200ms;
+      -o-transition: background 200ms;
+      transition: background 200ms;
+      width: 14.2%;
+      border-left: 1px solid #ddd;
+      height: 1000px; }
+      .calendar .content .days .day:first-child {
+        border-left: 0; }
+      .calendar .content .days .day:hover {
+        background: #fff; }
