@@ -1,0 +1,115 @@
+@import "fonts";
+
+.turquoise {
+  background: #1abc9c;
+}
+
+.belize {
+  background: #2980b9;
+}
+
+.amethyst {
+  background: #9b59b6;
+}
+
+.sun-flower {
+  background: #f1c40f;
+}
+
+.alizarin {
+  background: #e74c3c;
+}
+
+body {
+  font-family: "Brandon Text", sans-serif;
+  text-align: center;
+}
+
+.sidebar {
+  background: rgba(15, 35, 46, 0.85);
+  height: 1000px;
+  padding:0 45px;
+}
+
+.content {
+  height: 1000px;
+}
+
+.calendar-box {
+
+}
+
+.calendar {
+  > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sidebar {
+    color: #fff;
+    a {
+      color:#fff;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .heading {
+      padding: 0 0 5px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+      margin-bottom: 15px;
+    }
+
+    .calendar-box {
+      margin-bottom:35px;
+      .week-row {
+        font-size:12px;
+
+        &.week-heading {
+          .day {font-weight: bold}
+        }
+        .day {
+          display: inline-block;
+          width: 35px;
+          height:35px;
+
+          &.past-month-day {
+            color:rgba(255,255,255,0.5);
+          }
+        }
+      }
+
+    }
+
+    .clients {
+      .clients-heading {
+        border: none;
+        font-size: 12px;
+        color: rgba(255,255,255,0.6);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      text-align: left;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 15px 0;
+        }
+      }
+      .active-indicator {
+        width: 15px;
+        height: 15px;
+        border-radius: 999em;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .content {
+    background:#EDEFF1;
+  }
+}

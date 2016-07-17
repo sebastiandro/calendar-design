@@ -1,0 +1,19 @@
+{
+  "name": "workout-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "~0.4.4"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
