@@ -142,21 +142,35 @@
 .turquoise {
   background: #1abc9c; }
 
+.turquoise-border {
+  border: 1px solid #1abc9c; }
+
 .belize {
   background: #2980b9; }
+
+.belize-border {
+  border: 1px solid #2980b9; }
 
 .amethyst {
   background: #9b59b6; }
 
+.amethyst-border {
+  border: 1px solid #9b59b6; }
+
 .sun-flower {
   background: #f1c40f; }
+
+.sun-flower-border {
+  border: 1px solid #f1c40f; }
 
 .alizarin {
   background: #e74c3c; }
 
+.alizarin-border {
+  border: 1px solid #e74c3c; }
+
 body {
-  font-family: "Brandon Text", sans-serif;
-  text-align: center; }
+  font-family: "Brandon Text", sans-serif; }
 
 .sidebar {
   background: rgba(15, 35, 46, 0.85);
@@ -170,27 +184,43 @@ body {
   margin-left: 0;
   margin-right: 0; }
 .calendar .sidebar {
-  color: #fff; }
+  color: #F4F6F8;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  width: 335px; }
   .calendar .sidebar a {
-    color: #fff; }
+    color: #F4F6F8; }
     .calendar .sidebar a:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
   .calendar .sidebar .heading {
-    padding: 0 0 5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.27);
-    margin-bottom: 15px; }
+    padding: 25px 0;
+    text-align: center; }
+    .calendar .sidebar .heading h3 {
+      margin: 0; }
   .calendar .sidebar .calendar-box {
     margin-bottom: 35px; }
     .calendar .sidebar .calendar-box .week-row {
-      font-size: 12px; }
+      font-size: 12px;
+      margin-right: -10px;
+      margin-left: -10px; }
       .calendar .sidebar .calendar-box .week-row.week-heading .day {
         font-weight: bold; }
+      .calendar .sidebar .calendar-box .week-row.week-heading .separator {
+        border-bottom: 1px solid #ddd;
+        width: 245px;
+        margin: 0 auto;
+        display: none; }
       .calendar .sidebar .calendar-box .week-row .day {
         display: inline-block;
         width: 35px;
-        height: 35px; }
+        height: 35px;
+        padding: 8px 0 0px 12px;
+        color: rgba(255, 255, 255, 0.9); }
         .calendar .sidebar .calendar-box .week-row .day.past-month-day {
           color: rgba(255, 255, 255, 0.5); }
+        .calendar .sidebar .calendar-box .week-row .day.today {
+          background: #3e4f58;
+          border-radius: 9999em; }
   .calendar .sidebar .clients {
     text-align: left; }
     .calendar .sidebar .clients .clients-heading {
@@ -214,5 +244,7 @@ body {
       position: relative;
       top: 2px;
       margin-right: 10px; }
+      .calendar .sidebar .clients .active-indicator.inactive {
+        background: none; }
 .calendar .content {
   background: #EDEFF1; }

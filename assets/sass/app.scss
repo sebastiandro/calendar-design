@@ -1,28 +1,53 @@
 @import "fonts";
 
+$turquoise: #1abc9c;
+$belize: #2980b9;
+$amethyst: #9b59b6;
+$sun-flower: #f1c40f;
+$alizarin: #e74c3c;
+
 .turquoise {
-  background: #1abc9c;
+  background: $turquoise;
+}
+
+.turquoise-border {
+  border: 1px solid $turquoise;
 }
 
 .belize {
-  background: #2980b9;
+  background: $belize;
+}
+
+.belize-border {
+  border: 1px solid $belize;
 }
 
 .amethyst {
-  background: #9b59b6;
+  background: $amethyst;
+}
+
+.amethyst-border {
+  border: 1px solid $amethyst;
 }
 
 .sun-flower {
-  background: #f1c40f;
+  background: $sun-flower;
+}
+
+.sun-flower-border {
+  border: 1px solid $sun-flower;
 }
 
 .alizarin {
-  background: #e74c3c;
+  background: $alizarin;
+}
+
+.alizarin-border {
+  border: 1px solid $alizarin;
 }
 
 body {
   font-family: "Brandon Text", sans-serif;
-  text-align: center;
 }
 
 .sidebar {
@@ -45,37 +70,60 @@ body {
     margin-right: 0;
   }
   .sidebar {
-    color: #fff;
+    color: #F4F6F8;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    width: 335px;
+
     a {
-      color:#fff;
+      color:#F4F6F8;
       &:hover {
         cursor: pointer;
+        text-decoration: none;
       }
     }
 
     .heading {
-      padding: 0 0 5px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.27);
-      margin-bottom: 15px;
+      padding: 25px 0;
+      text-align: center;
+      h3 {
+        margin: 0;
+      }
     }
 
     .calendar-box {
       margin-bottom:35px;
       .week-row {
         font-size:12px;
+        margin-right: -10px;
+        margin-left: -10px;
 
         &.week-heading {
-          .day {font-weight: bold}
+          .day {font-weight: bold;}
+
+          .separator {
+            border-bottom: 1px solid #ddd;
+            width: 245px;
+            margin: 0 auto;
+            display: none;
+          }
         }
         .day {
           display: inline-block;
           width: 35px;
-          height:35px;
+          height: 35px;
+          padding: 8px 0 0px 12px;
+          color: rgba(255,255,255,0.9);
 
           &.past-month-day {
             color:rgba(255,255,255,0.5);
           }
+
+          &.today {
+            background: rgb(62, 79, 88);
+            border-radius: 9999em;
+          }
         }
+
       }
 
     }
@@ -106,6 +154,10 @@ body {
         position: relative;
         top: 2px;
         margin-right: 10px;
+
+        &.inactive {
+          background: none;
+        }
       }
     }
   }
