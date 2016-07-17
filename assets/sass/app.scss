@@ -14,12 +14,20 @@ $alizarin: #e74c3c;
   border: 1px solid $turquoise;
 }
 
+.turquoise-shadow {
+  box-shadow: 0px 1px 0px 0px rgba(darken($turquoise, 15%), 0.8);
+}
+
 .belize {
   background: $belize;
 }
 
 .belize-border {
   border: 1px solid $belize;
+}
+
+.belize-shadow {
+  box-shadow: 0px 1px 0px 0px rgba(darken($belize, 15%), 0.8);
 }
 
 .amethyst {
@@ -30,6 +38,10 @@ $alizarin: #e74c3c;
   border: 1px solid $amethyst;
 }
 
+.amethyst-shadow {
+  box-shadow: 0px 1px 0px 0px rgba(darken($amethyst, 15%), 0.8);
+}
+
 .sun-flower {
   background: $sun-flower;
 }
@@ -38,12 +50,20 @@ $alizarin: #e74c3c;
   border: 1px solid $sun-flower;
 }
 
+.sun-flower-shadow {
+  box-shadow: 0px 1px 0px 0px rgba(darken($sun-flower, 15%), 0.8);
+}
+
 .alizarin {
   background: $alizarin;
 }
 
 .alizarin-border {
   border: 1px solid $alizarin;
+}
+
+.alizarin-shadow {
+  box-shadow: 0px 1px 0px 0px rgba(darken($alizarin, 15%), 0.8);
 }
 
 body {
@@ -55,10 +75,12 @@ body {
   background: rgba(15, 35, 46, 0.85);
   height: 1000px;
   padding:0 45px;
+  width: 23.1%;
 }
 
 .content {
   height: 1000px;
+  width: 76.9%;
 }
 
 .calendar-box {
@@ -191,7 +213,7 @@ a {
     }
   }
   .content {
-    background:#EDEFF1;
+    background:#FBFCFC;
     padding: 0;
 
     .content-header {
@@ -273,6 +295,37 @@ a {
       height:1000px;
       .day {
 
+        // Day
+        .day-title {
+          opacity: 0.85;
+          text-align: center;
+          margin-bottom: 35px;
+          .number {
+            font-size: 36px;
+            font-weight:bold;
+          }
+          .weekday {
+            font-size:14px;
+            text-transform: uppercase;
+          }
+        }
+
+        ul.tasks {
+          padding:0;
+          list-style-type: none;
+          li {
+            padding:5px;
+            color:#fff;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+            margin-bottom: 5px;
+            border-radius:2px;
+            .time {
+              font-size:11px;
+              display: block;
+            }
+          }
+        }
+
         &:first-child {
           border-left:0;
         }
@@ -295,4 +348,7 @@ a {
       }
     }
   }
+
+
+
 }
